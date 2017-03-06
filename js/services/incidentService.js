@@ -6,6 +6,7 @@ var incidentService = (function(window, $) {
         var query = "?$select=date,time"
           + "&$limit=1"
           + "&$order=date DESC,time DESC";
+       // 'https://data.sfgov.org/resource/cuks-n6tp.json?$select=date,time&$limit=1&$order=date DESC,time DESC
 
         $.get(INCIDENTS_API_JSON_URL + query, function(data) {
             callback(data[0]);

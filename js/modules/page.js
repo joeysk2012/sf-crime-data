@@ -68,6 +68,7 @@ var pageModule = (function(window, $) {
             _hideLoader();
             mapModule.drawRadialIncidents(_convertJsonToGeoJson(incidentsJson));
             tableModule.loadDataToTable(incidentsJson);
+            
         });
     }
 
@@ -105,6 +106,7 @@ var pageModule = (function(window, $) {
                 properties: incidentProperties
             });
         });
+        
 
         return geoJson;
     }
